@@ -6,7 +6,7 @@ with open('input.txt', 'r') as inputFile:
 
 def part_one():
     sum = 0
-    for i, line in enumerate(lines):
+    for i, _ in enumerate(lines):
         if i >= 1:
             if lines[i] > lines[i-1]:
                 sum += 1
@@ -14,7 +14,7 @@ def part_one():
 
 def part_two():
     sum = 0
-    for i, line in enumerate(lines):
+    for i, _ in enumerate(lines):
         if i >= 3:
             if lines[i] + lines[i-1] + lines[i-2] > lines[i-1] + lines [i- 2] + lines[i- 3]:
                 sum += 1
