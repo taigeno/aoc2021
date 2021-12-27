@@ -1,11 +1,9 @@
-import numpy as np
 with open('input.txt', 'r') as inputFile:
     lines = [line.strip() for line in inputFile]
 
 def part_one():
     half = len(lines) / 2
-    n_digits = len(lines[0])
-    digits = [0] * n_digits
+    digits = [0] * len(lines[0])
     for line in lines:
         for i, num in enumerate(line):
             digits[i] += int(num)
